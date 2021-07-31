@@ -337,7 +337,7 @@ nav ul li a:hover{
     width: 226px;
     height: 30px;
     top: 30%;
-    transform: translate(50%, 9%);
+    transform: translate(50%, -182%);
 }
 .content h1 {
     font-size: 27px;
@@ -381,4 +381,9 @@ nav ul li a:hover{
     flex: 1 0 40px;
     max-width: 40px;
 }
+.content img {
+    max-width: 93%;
+}
+footer {
+    padding: 25px 0;
 }
