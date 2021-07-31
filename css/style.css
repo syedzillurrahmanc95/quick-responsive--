@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700;900&display=swap');
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+font-family: 'Poppins', sans-serif;
+}
+
+
+.container{
+    width: 1100px;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+img{
+    max-width: 100%;
+}
+
+.col-3{
+    max-width: 33.33%;
+    flex: 1 0 33.33%;
+
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+/*header css*/
+header{
+border-bottom: 2px solid #3b506c1a;
+position: sticky;
+width: 100%;
+background: #fff;
+z-index:10;
+top:0;
+}
+header .row{
+    align-items: center;
+}
+.logo{
+    flex-basis: 20%;
+    max-width: 20%;
+}
+.logo a{}
+.logo a img{}
+nav{
+    flex-basis: 80%;
+    max-width: 80%;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+}
+nav ul li{}
+nav ul li a{
+    color: #3b506c;
+    padding: 20px 15px;
+    display: block;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    position: relative;
+    transition: all 0.3s ease;
+
+}
+nav ul li a:hover{
+    color: #fff;
+}
+
+nav ul li a span{
+    width: 3px;
+    height: 25px;
+    background: #162c48;
+    display: block;
+    transition: all 0.3s ease;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: -1;
+}
+nav ul li a:hover span{
+    width: 100%;
+}
+
+/*banner section css*/
+.banner-section{
+}
+.content{
+    text-align: center;
+}
+.content h1{
+    font-size: 45px;
+    color: #162c48;
+}
+.content h1 span{
+    display: block;
+    color: #0C66FF;
+}
+.content h1 span b{
+    
+display: block;
+    
+width: 374px;
+    
+height: 43px;
+    
+background: #f7ff29;
+    
+position: absolute;
+    
+top: 25%;
+    
+right: 50%;
+    
+transform: translate(50%, -40%);
+    
+z-index: -1;
+    
+border-radius: 5px;
+    
+box-shadow: 0 0 5px #00000045;
+}
+.content img{
+    max-width: 500px;
+    box-shadow: 0 0 10px #1c191936;
+}
+.content p{
+    color: #3b506ce0;
+    max-width: 800px;
+    margin: 20px auto;
+    font-size: 19px;
+    font-weight: 300;
+}
+
+
+/*feature section css*/
+.feature-section{
+    justify-content: center;
+}
+.feature-section .row{
+
+justify-content: center;
+}
+.feature-content{}
+.feature-content h2{font-size: 44px;color: #162c48;line-height: 1;font-weight: 800;}
+.feature-content h2 span{
+    color: #ff4141;
+}
+.feature-content p{
+    color: #3b506cd6;
+    margin: 5px auto;
+    font-size: 19px;
+    font-weight: 400;
+}
+.text-right{
+    text-align: right;
+}
+
+/*blog section css*/
+.blog-section{
+    padding: 50px 0;
+}
+.post{
+    padding: 78px 30px;
+    box-shadow: 0 0 10px #1c191936;
+}
+.illustration-5{
+    background: #FDEBED;
+}
+.illustration-6{
+    background: #EBF9F4;
+}
+.illustration-7{
+    background: #FFF7E8;
+}
+.post h3{
+    font-size: 15px;
+    color: #162c48;
+    line-height: 1;
+    font-weight: 700;
+}
+.post p{
+    color: #3b506cd6;
+    margin: 5px auto;
+    font-size: 17px;
+    font-weight: 400;
+}
+.post img{
+    max-height: 180px;
+    display: block;
+    margin: auto;
+    margin-bottom: 25px;
+}
+
+
+/*footer css*/
+footer{
+    background: #0C66FF;
+    text-align: center;
+    padding: 30px 0;
+}
+footer p{
+    color: #ffffff94;
+}
+footer p strong{
+    color: #fff;
+    letter-spacing: 3px;
+}
+
+
+
+/*** sociallist ***/
+.sociallist{
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-49%);
+    left: 15px;
+}
+.sociallist li{
+    flex: 1 0 auto;
+}
+.sociallist li a{
+    background: #162c48;
+    color: #fff;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 5px 4px 1px #0000003b;
+}
+.sociallist li a:hover{}
+
+
+@media( max-width: 1200px){
+     .container{
+        width: 900px;
+     }
+     .content h1{
+        font-size: 45px;
+    }
+    .content p{
+        max-width: 700%;
+        font-size: 16px;
+    }
+    .content img{
+        max-width: 400px;
+    }
+    .feature-content h2 {
+    font-size: 34px
+}
+.feature-content p {
+    font-size: 12px;
+}
+.post h3 {
+    font-size: 15px;
+}
+.post p {
+    font-size: 11px;
+}
+.post img {
+    max-height: 120px;
+    }
+   .content h1 span b {
+    transform: translate(50%, -31%);
+}
+.post {
+    padding: 44px 32px;
+    }
+footer {
+    padding: 15px 0;
+}
+@media( max-width: 992px){
+      .container{
+        width: 700px;
+     }
+    .feature-content h2 {
+    font-size: 25px;
+}
+.feature-content p {
+    font-size: 9px;
+}
+.post p {
+    font-size: 10px;
+}
+.post img {
+    max-height: 82px;
+}
+}
+@media( max-width: 768px){
+    .container{
+        width: 100%;
+        padding: 0 15px;
+    }
+    .sociallist li a {
+    font-size: 12px;
+}
+}
+
+@media( max-width: 576px){
+    .logo, nav {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+    nav ul{
+        justify-content: center;
+    }
+    .logo{
+        text-align: center;
+        padding: 10px 0;
+    }
+    nav ul li a {
+    padding: 4px 8px;
+    font-size: 14px;
+}
+nav ul li a span{
+    content: none;
+}
+nav ul li a:hover{
+    color: #0c66ff;
+}
+.content h1 span b {
+    width: 226px;
+    height: 30px;
+    top: 30%;
+    transform: translate(50%, 9%);
+}
+.content h1 {
+    font-size: 27px;
+    padding: 15px 0;
+}
+.col-3{
+    max-width: 100%;
+    flex: 1 0 100%;
+}
+.feature-content{
+    text-align: center !important;
+}
+.feature-content h2{
+    font-size: 34px;
+}
+.post{
+    padding: 45px 45px;
+    text-align: center;
+}
+.feature-content p {
+    font-size: 14px;
+}
+.post img {
+    max-height: 100%;
+}
+.post h3{
+    font-size: 24px;
+}
+.post p{
+    font-size: 8px;
+}
+.sociallist{
+    flex-direction: row;
+    position: static;
+    transform: translateY(0);
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.sociallist li{
+    flex: 1 0 40px;
+    max-width: 40px;
+}
+}
